@@ -1,6 +1,6 @@
 [theme]
 primaryColor = "#eca400"  # Golden Yellow for a warm accent
-backgroundColor = "#001d4a"  # Deep Blue for the main background
-secondaryBackgroundColor = "#006992"  # Dark Blue for secondary elements
+backgroundColor = "#001d4a"  # Deep Blue for a calming background
+secondaryBackgroundColor = "#0077b6"  # Ocean Blue for a complementary secondary background
 textColor = "#ffffff"  # Soft White for readability without harsh contrast
 font = "sans serif"  # Clean and modern font
