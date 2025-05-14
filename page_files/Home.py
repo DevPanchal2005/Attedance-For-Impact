@@ -4,13 +4,30 @@ import streamlit as st
 image = "resources/logo.png"
 st.logo(image, size='large')
 
-# Image
-st.image(image, use_container_width=True)
+with st.container():
+    """ # 📚 Attend2Achieve 🎯
+    A smart analytical tool to correlate subject-wise attendance with academic performance, revealing hidden trends and guiding actionable improvements.
 
-with st.container(border=True):
-    """ # What is Attendance for Impact ? 
-    This is an app designed to help institutions refine their policies and gain deeper insights into academic performance, revealing hidden patterns through thoughtful analysis and guidance."""
+    ## 🔍 Overview   
+    Attend2Achieve analyzes the relationship between subject-wise attendance and theory/practical marks. It uses statistical methods like skewness, IQR, standard deviation, and mean-median analysis to explain performance patterns and suggest data-driven improvements. Visual dashboards make insights clear and actionable for institutions.
+
+    ## ✨ Key Features
+    ✔ Subject-wise Correlation Analysis: Attendance vs. marks (theory + practical).   
+    ✔ Statistical Insight: Uses skewness, standard deviation, IQR, and mean-median gaps.   
+    ✔ Diagnostic Reports: Recommends improvements through per-subject analysis.   
+    ✔ Visualizations: Includes histograms, correlation heatmaps, and distribution plots.   
+    ✔ Academic Insight Dashboard: Summarizes performance trends across all subjects.   
+    ✔ Tech Stack: Python, Pandas, NumPy, Pyplot, Streamlit.   
+    
+    
+    ## 📌 Explore the Tool
+    """
     # View Research Paper Button
+with st.container(border=True):
+    "# Test Analysis Feature"
+    "###### This page allows you to test the project and generate an analysis of student performance without uploading a file. If you prefer to test the app without providing your own data, you can use pre-existing analysis. To generate a synthetic analysis, simply click the button below."
+    # View Synthetic Analysis Button
+    st.page_link("page_files/View_Synthetic_Analysis.py", label="Generate Synthetic Analysis", icon="🧪")
 
 with st.container(border=True):
     "# Generate Analysis "
@@ -36,11 +53,10 @@ with st.container(border=True):
     "#### 📊 BeyondTheMarks - Exposing Bias, Elevating Education"
     "##### 🔍 A Different Lens on Bias and Teaching Impact"
     st.write(
-        "Similar to *Attendance for Impact*, *BeyondTheMarks* dives into academic performance but with a sharper focus on *bias detection and teaching effectiveness.* "
+        "Similar to *Attend2Achieve*, *BeyondTheMarks* dives into academic performance but with a sharper focus on *bias detection and teaching effectiveness.* "
         "By leveraging *statistical methods and machine learning*, it evaluates whether *gender or religion* influence grades unfairly, assesses *professor effectiveness using ANOVA*, "
         "and uncovers hidden *subject correlations* to predict student success. This isn’t just another analytics dashboard—it’s a step towards a *fairer, more accountable education system.*"
     )
     
     # 🔗 Try It Now
     st.page_link("https://beyondthemarks.streamlit.app", label="Explore BeyondTheMarks", icon="🚀", use_container_width=True)
-    
